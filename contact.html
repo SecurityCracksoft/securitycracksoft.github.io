@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Contact SecurityCracksoft</title> <!-- Specific title for contact page -->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            /* Add any specific styles for the contact page if needed */
+        </style>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html"> <!-- Link back to homepage -->
+                    <img src="assets/cracksoft.png" alt="SecurityCracksoft Logo" height="40">
+                </a>                  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/blog.html">Blogs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header for Contact Page -->
+        <header class="bg-dark py-5">
+            <div class="container" style="max-width: 80%;">
+              <div class="text-center my-5">
+                <h1 class="display-4 fw-bold text-white mb-3">
+                  <span id="typed-welcome-contact"></span>
+                </h1>
+                <p class="lead text-white-50 mb-4">We'd love to hear from you! Send us a message.</p>
+              </div>
+            </div>
+        </header>
+
+        <!-- Contact Form Section -->
+        <section class="py-5">
+            <div class="container px-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-6">
+                        <p class="lead text-center mb-5">
+                            Please fill out the form below, and your message will open in your default email client.
+                            You will need to click 'Send' from there.
+                        </p>
+                        <!-- Contact Form -->
+                        <form id="contactForm" action="mailto:shlok.k3sarwani@gmail.com" method="post" enctype="text/plain">
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" name="Name" type="text" placeholder="Enter your name..." required />
+                                <label for="name">Full Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" name="Email" type="email" placeholder="name@example.com" required />
+                                <label for="email">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" name="Number" type="tel" placeholder="(123) 456-7890" />
+                                <label for="phone">Phone Number (Optional)</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="country" name="Country" type="text" placeholder="Enter your country..." />
+                                <label for="country">Country (Optional)</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" name="Message" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-5 d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="m-0 text-white text-center text-md-start mb-3 mb-md-0">© SecurityCracksoft. All Rights Reserved. Dev by Shlok</p>
+                <div class="social-icons text-center text-md-end">
+                    <a href="https://facebook.com" target="_blank" class="text-white mx-2">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="text-white mx-2">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="text-white mx-2">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="text-white mx-2">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Typed.js for header animation -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <!-- Core theme JS (if you have specific JS for this page)-->
+        <script src="js/scripts.js"></script>
+        <!-- SB Forms JS (for form validation, though mailto doesn't use it for submission)-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script>
+            // Initialize Typed.js for the header on this page
+            document.addEventListener('DOMContentLoaded', () => {
+                new Typed("#typed-welcome-contact", {
+                    strings: ["Get in Touch"],
+                    typeSpeed: 60,
+                    showCursor: false
+                });
+            });
+        </script>
+    </body>
+</html>
